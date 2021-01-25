@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/android"
+        tools:context=".MainActivity">
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/iv_profile"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:layout_marginTop="40dp"
+        android:src="@drawable/foto"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_nama"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Afi Naufal Setiawan"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/iv_profile"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="@+id/iv_profile"
+        app:layout_constraintTop_toBottomOf="@+id/iv_profile" />
+
+    <ImageView
+        android:id="@+id/iv_email"
+        android:layout_width="40dp"
+        android:layout_height="30dp"
+        android:src="@drawable/gmail"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.362" />
+
+
+    <ImageView
+        android:id="@+id/iv_telpon"
+        android:layout_width="40dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="30dp"
+        android:src="@drawable/telephone"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_email"
+        app:layout_constraintStart_toEndOf="@+id/iv_email"
+        app:layout_constraintTop_toTopOf="@+id/iv_email" />
+
+
+    <ImageView
+        android:id="@+id/iv_intagram"
+        android:layout_width="40dp"
+        android:layout_height="30dp"
+        android:layout_marginEnd="30dp"
+        android:src="@drawable/instagram"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_email"
+        app:layout_constraintEnd_toStartOf="@+id/iv_email"
+        app:layout_constraintTop_toTopOf="@+id/iv_email" />
+
+
+    <ImageView
+        android:id="@+id/iv_alamat"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="310dp"
+        android:src="@drawable/gambar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.131"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_alamat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="12dp"
+        android:text="JL.Rambutan XVI NO.4 Tegal Barat"
+        android:textSize="15sp"
+        app:layout_constraintStart_toEndOf="@+id/iv_alamat"
+        app:layout_constraintTop_toTopOf="@+id/iv_alamat" />
+
+    <TextView
+        android:id="@+id/tv_kota"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Kota Tegal"
+        android:textSize="15sp"
+        app:layout_constraintStart_toStartOf="@+id/tv_alamat"
+        app:layout_constraintTop_toBottomOf="@+id/tv_alamat" />
+
+    <ImageView
+        android:id="@+id/iv_comunity"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="24dp"
+        android:src="@drawable/gambar1"
+        app:layout_constraintEnd_toEndOf="@+id/iv_alamat"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/iv_alamat"
+        app:layout_constraintTop_toBottomOf="@+id/iv_alamat" />
+
+
+    <TextView
+        android:id="@+id/tv_comunity1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:text="PLUGIN"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/iv_comunity"
+        app:layout_constraintTop_toTopOf="@+id/iv_comunity" />
+
+    <TextView
+        android:id="@+id/tv_comunity2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Mobile Division"
+        android:textSize="15sp"
+        app:layout_constraintStart_toStartOf="@+id/tv_comunity1"
+        app:layout_constraintTop_toBottomOf="@+id/tv_comunity1" />
+
+
+    <ImageView
+        android:id="@+id/iv_campus"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="24dp"
+        android:src="@drawable/education"
+        app:layout_constraintEnd_toEndOf="@+id/iv_comunity"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/iv_comunity"
+        app:layout_constraintTop_toBottomOf="@+id/iv_comunity" />
+
+
+    <TextView
+        android:id="@+id/tv_jurusan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:text="D4 Teknik Informatika"
+        android:textSize="15sp"
+        app:layout_constraintStart_toEndOf="@+id/iv_campus"
+        app:layout_constraintTop_toTopOf="@+id/iv_campus" />
+
+    <TextView
+        android:id="@+id/tv_nama_campus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Politeknik Harapan Bersama"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/tv_jurusan"
+        app:layout_constraintTop_toBottomOf="@+id/tv_jurusan" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
