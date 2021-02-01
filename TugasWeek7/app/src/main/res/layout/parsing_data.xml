@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_judul_parsing"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Masukan Data"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:textStyle="bold"/>
+
+    <EditText
+        android:id="@+id/edt_nama"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nama"/>
+
+    <EditText
+        android:id="@+id/edt_semester"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Semester"
+        android:inputType="number"/>
+
+    <EditText
+        android:id="@+id/edt_divisi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Divisi"/>
+
+    <Button
+        android:id="@+id/btn_close"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Close"
+        android:textColor="@color/white"
+        android:background="@color/merah"/>
+
+    <Button
+        android:id="@+id/btn_Parsing"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Parsing"
+        android:textColor="@color/white"
+        android:background="@color/hijau"/>
+
+</LinearLayout>
