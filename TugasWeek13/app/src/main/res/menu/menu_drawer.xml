@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/btn_version"
+        android:title="version"
+        android:icon="@drawable/ic_baseline_live_help_24"
+        app:showAsAction="always"/>
+
+    <item
+        android:id="@+id/btn_save"
+        android:title="Save"
+        android:icon="@drawable/ic_baseline_save_24"
+        app:showAsAction="always"/>
+
+    <item
+        android:id="@+id/btn_delete"
+        android:title="Delete"
+        android:icon="@drawable/ic_baseline_delete_24"
+        app:showAsAction="always"/>
+
+    <item
+        android:id="@+id/btn_night"
+        android:title="Night"
+        android:icon="@drawable/ic_baseline_nightlight_24"
+        app:showAsAction="always"/>
+
+</menu>

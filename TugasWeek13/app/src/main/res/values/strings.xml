@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">TugasWeek13</string>
+
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+    <string name="satu">Pesan</string>
+    <string name="dua">Kontak</string>
+    <string name="tiga">Status</string>
+</resources>
