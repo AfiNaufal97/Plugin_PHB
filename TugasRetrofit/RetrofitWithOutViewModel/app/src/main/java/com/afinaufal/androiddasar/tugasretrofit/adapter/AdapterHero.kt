@@ -6,8 +6,14 @@ import androidx.recyclerview.widget.RecyclerView
 import com.afinaufal.androiddasar.tugasretrofit.databinding.ListAllHeroBinding
 import com.afinaufal.androiddasar.tugasretrofit.model.Data
 
-class AdapterHero(val data:List<Data>):RecyclerView.Adapter<AdapterHero.HeroViewHolder>() {
+class AdapterHero(val data:ArrayList<Data>):RecyclerView.Adapter<AdapterHero.HeroViewHolder>() {
     class HeroViewHolder(val binding:ListAllHeroBinding):RecyclerView.ViewHolder(binding.root)
+
+    fun setData(dataBaru:ArrayList<Data>){
+        data.clear()
+        data.addAll(dataBaru)
+        notifyDataSetChanged()
+    }
 
     lateinit var setOnClickListener:OnItemHeroClickListener
 

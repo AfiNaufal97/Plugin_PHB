@@ -26,6 +26,11 @@ class MainActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         getApi()
+        binding.floatAddHero.setOnClickListener{
+            startActivity(Intent(this, AddHeroActivity::class.java)
+                .putExtra("options", 1)
+            )
+        }
     }
 
     private fun getApi() {
@@ -46,11 +51,12 @@ class MainActivity : AppCompatActivity() {
         })
     }
 
-    private fun setRecyclerview(data: List<Data>) {
-        val adapterHero = AdapterHero(data)
-        binding.rvAllHero.apply {
-            adapter = adapterHero
-            layoutManager = LinearLayoutManager(this@MainActivity)
+    private fun setRecyclerview(data: ArrayList<Data>) {
+        val adapterHero = AdapterHero(arrayListOf())
+        adapterHero.setData(data)
+        val rv = binding.rvAllHero
+        rv.adapter = adapterHero
+        rv.layoutManager = LinearLayoutManager(this@MainActivity)
             adapterHero.clickItemHero(object :AdapterHero.OnItemHeroClickListener{
                 override fun clickItem(data: Data) {
                    Intent(this@MainActivity, DetailActivity::class.java).apply{
@@ -58,9 +64,7 @@ class MainActivity : AppCompatActivity() {
                        startActivity(this)
                    }
                 }
-
             })
-        }
     }
 
 }
