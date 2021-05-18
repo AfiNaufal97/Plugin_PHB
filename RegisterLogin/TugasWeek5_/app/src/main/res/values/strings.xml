@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">TugasWeek5_</string>
+    <string name="SignIn">Sign in</string>
+    <string name="Password">Password</string>
+    <string name="Email">Email</string>
+    <string name="SignUp">Sign up</string>
+    <string name="welcome">Welcome Back!</string>
+    <string name="pleaseSignIn">Please sign in to your account</string>
+    <string name="createAccount">Create new account</string>
+    <string name="pleaseFill">Please fill in form to continue</string>
+    <string name="Username">Username</string>
+    <string name="Name">Name</string>
+</resources>
