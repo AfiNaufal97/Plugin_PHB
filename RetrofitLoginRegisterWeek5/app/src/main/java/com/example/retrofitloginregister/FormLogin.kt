@@ -32,6 +32,11 @@ class FormLogin:AppCompatActivity(){
         }
     }
 
+    override fun onResume() {
+        super.onResume()
+        isLogin()
+    }
+
     private fun loginProcess() {
         val username = binding.edtUseranmeLogin.text.toString()
         val password = binding.edtPassword.text.toString()
@@ -43,6 +48,7 @@ class FormLogin:AppCompatActivity(){
                     if(body != null){
                         Constanta.setToken(this@FormLogin, body.data.token)
                         Toast.makeText(applicationContext, "Hallo ${body.data.name}", Toast.LENGTH_SHORT).show()
+                        startActivity(Intent(this@FormLogin, MainActivity::class.java))
                     }
                 }else{
                     Toast.makeText(applicationContext, "Gagal Masuk", Toast.LENGTH_SHORT).show()
@@ -61,6 +67,15 @@ class FormLogin:AppCompatActivity(){
     private fun toFormRegister() {
         binding.tvToRegister.setOnClickListener {
             startActivity(Intent(this, FormRegister::class.java))
+        }
+    }
+
+    private fun isLogin(){
+        val token = Constanta.getToken(this)
+        if(!token.equals("Undefined")){
+            startActivity(Intent(this, MainActivity::class.java).also {
+                finish()
+            })
         }
     }
 }
